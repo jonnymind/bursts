@@ -1,2 +1,3 @@
-# bursts
-Lightweight, language agnostic microservice application server
+# BurstS
+
+A lightweight, language agnostic microservice application server.
