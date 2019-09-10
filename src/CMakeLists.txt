@@ -6,13 +6,14 @@
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 # file(GLOB SRC_FILES *.cpp)
-set(SRC_FILES main.cpp)
+set(SRC_FILES main.cpp app.cpp)
 file(GLOB HDR_FILES *.h)
 
 ADD_EXECUTABLE( bursts 
    ${SRC_FILES}
    ${HDR_FILES} # optional but useful, see comment above.
 )
+set_property(TARGET bursts PROPERTY CXX_STANDARD 17)
 
 if(UNIX OR MAC)
    set(SYS_SPECIFIC socket_sys_unix.cpp)

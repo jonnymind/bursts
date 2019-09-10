@@ -10,24 +10,16 @@
 
 #include <iostream>
 #include <string>
+#include <app.h>
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Hello World\n";
-    /*
-    BurstsApp theApp;
+    BurstSApp theApp;
 
     try
     {
-        if ( theApp.init( argc, argv ) )
-        {
-            return theApp.run();
-        }
-        else
-        {
-            std::cerr << "burst: Cannot intialize application - "
-                << theApp.error() << '\n';
-        }
+        theApp.init( argc, argv );
+        return theApp.run();
     }
     catch ( const std::runtime_error& error )
     {
@@ -36,7 +28,6 @@ int main(int argc, char* argv[])
     }
 
     return 0xff;
-    */
 }
 
 /* End of main.cpp */
